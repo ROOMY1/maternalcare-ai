@@ -1,0 +1,51 @@
+{
+  "created": "20261110_180511",
+  "hardware": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "gpu": "NVIDIA GeForce RTX 2080 Super, 8192 MiB",
+    "llm": "qwen2.5:7b-instruct",
+    "judge": "qwen2.5:7b-instruct",
+    "embedding": "BAAI/bge-m3",
+    "top_k": "4",
+    "threshold": "0.56"
+  },
+  "rows": [
+    {
+      "k": 2,
+      "n": 19,
+      "embed_ms": 29.1,
+      "search_ms": 2.7,
+      "llm_ms": 1212.7,
+      "total_ms": 1242.2,
+      "generated_tokens": 51,
+      "tokens_per_s": 68.8,
+      "page_hit@k": 0.421
+    },
+    {
+      "k": 4,
+      "n": 19,
+      "embed_ms": 28.2,
+      "search_ms": 3.1,
+      "llm_ms": 2162.8,
+      "total_ms": 2192.6,
+      "generated_tokens": 72,
+      "tokens_per_s": 63.0,
+      "page_hit@k": 0.632
+    },
+    {
+      "k": 8,
+      "n": 19,
+      "embed_ms": 27.5,
+      "search_ms": 3.4,
+      "llm_ms": 2256.6,
+      "total_ms": 2288.5,
+      "generated_tokens": 81,
+      "tokens_per_s": 61.5,
+      "page_hit@k": 0.789
+    }
+  ],
+  "vram_idle_mb": 6765,
+  "vram_loaded_mb": 6822
+}

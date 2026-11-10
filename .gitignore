@@ -1,0 +1,23 @@
+# Local settings and secrets
+.env
+.claude/
+
+# Virtual environment and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Rebuilt by the scripts
+vector_db/
+db/*.db
+db/*.db-wal
+db/*.db-shm
+data/processed/
+
+# Third-party guideline PDFs (download them from data/sources.csv)
+data/raw/
+
+# Raw evaluation dumps
+eval/results/*.raw

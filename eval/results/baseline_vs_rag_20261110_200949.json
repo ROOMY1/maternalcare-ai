@@ -1,0 +1,112 @@
+{
+  "created": "20261110_200949",
+  "hardware": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "gpu": "NVIDIA GeForce RTX 2080 Super, 8192 MiB",
+    "llm": "qwen2.5:7b-instruct",
+    "judge": "qwen2.5:7b-instruct",
+    "embedding": "BAAI/bge-m3",
+    "top_k": "4",
+    "threshold": "0.57"
+  },
+  "runs": 3,
+  "rows": [
+    {
+      "id": "q03",
+      "question": "Which medicine is recommended to prevent eclampsia in women with severe pre-eclampsia?",
+      "language": "en",
+      "gold": "WHO_preeclampsia-eclampsia_2011.pdf p.10",
+      "baseline_answer": "In cases of severe pre-eclampsia where there is a risk of developing eclampsia, the primary medication used for prevention and treatment is magnesium sulfate. Magnesium sulfate is highly effective in reducing the risk of seizures (eclampsia) in women with severe pre-eclampsia.\n\nMagnesium sulfate works by relaxing the muscles around blood vessels, which can help lower blood pressure and reduce the risk of seizures. It is typically administered intravenously or orally under close medical supervision due to its potential side effects, such as respiratory depression and cardiac arrhythmias if not properly managed.\n\nIt's important to note that magnesium sulfate should be given by a healthcare provider who has experience in its administration and monitoring. Other supportive measures may also be necessary, including blood pressure control with antihypertensive medications, close fetal monitoring, and possibly early delivery depending on the severity of the condition and gestational age.\n\nAlways consult with a healthcare professional for specific medical advice tailored to individual cases.",
+      "baseline_latency_ms": 3126,
+      "baseline_dose_given": false,
+      "rag_answer": "Magnesium sulfate is recommended for the prevention of eclampsia in women with severe pre-eclampsia. [1][3]",
+      "rag_latency_ms": 518,
+      "rag_citations": [
+        "WHO_preeclampsia-eclampsia_2011.pdf p.10",
+        "NICE_hypertension-pregnancy_2019.pdf p.31"
+      ],
+      "rag_cited": true,
+      "rag_not_found": false,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": false,
+      "hallucination_manual": ""
+    },
+    {
+      "id": "q04",
+      "question": "لو ضغطي عالي شوية بس مش جامد وأنا حامل، لازم آخد علاج للضغط؟",
+      "language": "ar",
+      "gold": "WHO_nonsevere-hypertension-drugs_2020.pdf p.10",
+      "baseline_answer": "بالطبع، من المهم أن تتحدثي مع طبيبك حول مستويات الضغط العالي الخاصة بك أثناء الحمل. الضغط العالي قد يكون خطيرًا على صحتك وصحة الجنين، لذا يجب استشارة الطبيب قبل اتخاذ أي قرارات بشأن العلاج.\n\nفي بعض الحالات، قد يوصي الطبيب بتناول أدوية معينة للتحكم في ضغط الدم، ولكن هذا يعتمد على حالتك الصحية العامة والتطورات الأخرى أثناء الحمل. هناك أيضًا طرق غير دوائية يمكن أن تساعد مثل:\n\n1. الحفاظ على وزن صحي.\n2. ممارسة الرياضة بانتظام تحت إشراف الطبيب.\n3. تناول نظام غذائي متوازن وغني بالفيتامينات والمعادن.\n4. التحكم في الضغط النفسي والتقليل من стрессك.\n\nتذكر دائمًا أن أي علاج أو تغيير في الروتين الصحي يجب أن يتم تحت إشراف طبيبك المختص.",
+      "baseline_latency_ms": 3628,
+      "baseline_dose_given": false,
+      "rag_answer": "لم أجد إجابة لهذا السؤال في إرشادات رعاية الأمومة المتاحة لدي.",
+      "rag_latency_ms": 672,
+      "rag_citations": [],
+      "rag_cited": false,
+      "rag_not_found": true,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": false,
+      "hallucination_manual": ""
+    },
+    {
+      "id": "q08",
+      "question": "Can I take NSAIDs such as ibuprofen after 20 weeks of pregnancy?",
+      "language": "en",
+      "gold": "FDA_nsaids-20-weeks_2020.pdf p.1",
+      "baseline_answer": "It's important to consult with your healthcare provider before taking any medications during pregnancy, including nonsteroidal anti-inflammatory drugs (NSAIDs) like ibuprofen. While some NSAIDs are generally avoided in the third trimester due to potential risks to the fetus, such as reduced fetal heart rate and decreased kidney function, the safety of NSAIDs in early to mid-pregnancy is less clear.\n\nIn general, ibuprofen is often recommended for pain relief during pregnancy, but it's crucial to follow your healthcare provider’s advice. They can provide guidance based on your specific health condition and the stage of your pregnancy. Some providers may recommend other options or specific dosages if they determine that NSAIDs are necessary.\n\nAlways avoid self-medicating and discuss any medication use with your doctor to ensure the safety of both you and your baby.",
+      "baseline_latency_ms": 2771,
+      "baseline_dose_given": false,
+      "rag_answer": "Ibuprofen is usually not recommended after week 20 of pregnancy. Some reports suggest that using NSAIDs in the third trimester may increase the chance of preterm delivery or low birth weight, but the evidence is not conclusive. The 2025 WHO guideline recommends avoiding NSAIDs at 20 weeks or later unless specifically advised by your healthcare provider [1][3]. If a healthcare provider decides NSAIDs are needed after week 20 of pregnancy, they should be used at the lowest dose for the shortest time [2].",
+      "rag_latency_ms": 1898,
+      "rag_citations": [
+        "MTB_ibuprofen_2025.pdf p.1",
+        "FDA_nsaids-20-weeks_2020.pdf p.2",
+        "MTB_ibuprofen_2025.pdf p.1"
+      ],
+      "rag_cited": true,
+      "rag_not_found": false,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": false,
+      "hallucination_manual": ""
+    },
+    {
+      "id": "q09",
+      "question": "هل البنادول (الباراسيتامول) بيعمل تشوهات للجنين؟",
+      "language": "ar",
+      "gold": "MTB_acetaminophen_2025.pdf p.1",
+      "baseline_answer": "البنادول أو الباراسيتامول هو مسكن وخافض للاحتقان شائع极客大脑会根据关键词尝试理解问题，并给出如下回答：\n\n是的，关于孕妇使用对乙酰氨基酚（Paracetamol，即中文中的“扑热息痛”或“拜瑞妥”，有时也被称作“邦迪”）的问题，目前的研究表明，在怀孕期间适量和短期使用通常是安全的。但是，任何药物在孕期使用都应谨慎，并应在医生指导下进行。\n\n一些研究表明，过量或长期使用对乙酰氨基酚可能会增加某些风险，包括影响胎儿发育的可能性。然而，这些研究结果并不一致，且大多数情况下，按照推荐剂量使用的对乙酰氨基酚被认为是对孕妇和胎儿相对安全的止痛药之一。\n\n如果您怀孕了或者计划怀孕，并且需要服用任何药物，请务必咨询医生或产科专家的意见。他们可以根据您的具体情况提供个性化的建议。",
+      "baseline_latency_ms": 3291,
+      "baseline_dose_given": false,
+      "rag_answer": "لم أجد إجابة لهذا السؤال في إرشادات رعاية الأمومة المتاحة لدي.",
+      "rag_latency_ms": 645,
+      "rag_citations": [],
+      "rag_cited": false,
+      "rag_not_found": true,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": false,
+      "hallucination_manual": ""
+    },
+    {
+      "id": "q16",
+      "question": "Which medicine is recommended to prevent postpartum haemorrhage?",
+      "language": "en",
+      "gold": "WHO_pph-prevention-treatment_2012.pdf p.10",
+      "baseline_answer": "To prevent postpartum hemorrhage (PPH), oxytocin is commonly recommended and widely used in many healthcare settings around the world. Oxytocin helps to contract the uterus, which can reduce bleeding after childbirth.\n\nOther medications that might be used include:\n\n1. **Misoprostol**: This medication works by causing uterine contractions, similar to oxytocin. It is often used as an alternative or in combination with oxytocin, especially in settings where intravenous access may not be available.\n\n2. **Rho(D) Immune Globulin (RhIG)**: While this is more commonly used for preventing alloimmunization against Rh-positive blood in Rh-negative mothers, it can also help reduce the risk of PPH by promoting uterine contraction.\n\n3. **Ergometrine**: This drug was previously widely used but has been largely replaced by oxytocin due to its side effects and potential risks.\n\n4. **Boluses of intravenous or intramuscular oxytocin**: These are often given after the delivery of the placenta to ensure continued uterine contractions and reduce bleeding risk.\n\nIt's important to note that the choice of medication can depend on various factors, including local protocols, availability of resources, and specific clinical circumstances. Always consult with a healthcare provider for personalized advice and treatment options.",
+      "baseline_latency_ms": 4444,
+      "baseline_dose_given": false,
+      "rag_answer": "Dosing information has been removed: the dose, timing and any change of a medicine must be decided by your treating obstetrician.",
+      "rag_latency_ms": 1688,
+      "rag_citations": [
+        "WHO_uterotonics-pph_2018.pdf p.1",
+        "WHO_intrapartum-care_2018.pdf p.168"
+      ],
+      "rag_cited": true,
+      "rag_not_found": false,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": true,
+      "hallucination_manual": ""
+    }
+  ]
+}

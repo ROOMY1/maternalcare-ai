@@ -1,0 +1,114 @@
+{
+  "created": "20261110_180303",
+  "hardware": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "gpu": "NVIDIA GeForce RTX 2080 Super, 8192 MiB",
+    "llm": "qwen2.5:7b-instruct",
+    "judge": "qwen2.5:7b-instruct",
+    "embedding": "BAAI/bge-m3",
+    "top_k": "4",
+    "threshold": "0.56"
+  },
+  "runs": 3,
+  "rows": [
+    {
+      "id": "q03",
+      "question": "Which medicine is recommended to prevent eclampsia in women with severe pre-eclampsia?",
+      "language": "en",
+      "gold": "WHO_preeclampsia-eclampsia_2011.pdf p.10",
+      "baseline_answer": "In women with severe pre-eclampsia, magnesium sulfate is the recommended medication to prevent eclampsia. Magnesium sulfate is a critical treatment for the prevention and management of pre-eclampsia and eclampsia. It works by relaxing the muscles in the walls of blood vessels, which can help lower blood pressure and reduce the risk of seizures.\n\nIt's important to note that magnesium sulfate should be administered under strict medical supervision due to its potential side effects, including respiratory depression, cardiac arrest, and toxicity. The treatment should be closely monitored, and the patient's serum magnesium levels should be checked regularly.\n\nIn addition to magnesium sulfate, other supportive measures and treatments may be necessary, depending on the severity of the condition and the overall health of the patient. These can include close monitoring of maternal and fetal status, blood pressure control, and in some cases, early delivery if the condition is severe and poses a risk to the mother or the baby.",
+      "baseline_latency_ms": 2892,
+      "baseline_dose_given": false,
+      "rag_answer": "Magnesium sulfate is recommended for the prevention of eclampsia in women with severe pre-eclampsia [1][3].",
+      "rag_latency_ms": 487,
+      "rag_citations": [
+        "WHO_preeclampsia-eclampsia_2011.pdf p.10",
+        "NICE_hypertension-pregnancy_2019.pdf p.31"
+      ],
+      "rag_cited": true,
+      "rag_not_found": false,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": false,
+      "hallucination_manual": ""
+    },
+    {
+      "id": "q04",
+      "question": "لو ضغطي عالي شوية بس مش جامد وأنا حامل، لازم آخد علاج للضغط؟",
+      "language": "ar",
+      "gold": "WHO_nonsevere-hypertension-drugs_2020.pdf p.10",
+      "baseline_answer": "بالطبع، من المهم أن تتحدثي مع طبيبك حول مستويات ضغط الدم الخاصة بك أثناء الحمل. في بعض الأحيان، قد يكون ضغط الدم مرتفعًا بشكل طفيف، لكن هذا لا يعني بالضرورة أن تحتاجين إلى العلاج الفوري. \n\nهنا بعض النقاط الهامة:\n\n1. **التواصل مع الطبيب**: يجب عليك استشارة طبيبك أو طبيبة النساء والتوليد لتحديد ما إذا كان الضغط العالي يحتاج إلى علاج أم لا.\n\n2. **التحكم في الضغط**: قد يوصي الطبيب بطرق طبيعية لخفض الضغط مثل تناول الأطعمة الصحية، ممارسة الرياضة بانتظام، والحفاظ على وزن صحي.\n\n3. **ال严密的逻辑推理和分析能力是解答此问题的关键。首先，我们需要理解题目背景：这是一道关于逻辑推理的题目，要求我们根据给定的条件推断出正确的答案。接下来，我们逐步分析每个选项：\n\n1. **选项A：** 甲是乙的哥哥，丙是乙的妹妹。这意味着甲和乙是兄弟关系，丙是乙的妹妹。因此，丙是甲的妹妹，而不是姐姐。所以，选项A是错误的。\n\n2. **选项B：** 甲是乙的哥哥，丙是乙的妹妹。这意味着甲和乙是兄弟关系，丙是乙的妹妹。因此，丙是甲的妹妹，而不是姐姐。所以，选项B是错误的。\n\n3. **选项C：** 甲是乙的哥哥，丙是乙的妹妹。这意味着甲和乙是兄弟关系，丙是乙的妹妹。因此，丙是甲的妹妹，而不是姐姐。所以，选项C是错误的。\n\n4. **选项D：** 甲是乙的哥哥，丙是乙的妹妹。这意味着甲和乙是兄弟关系，丙是乙的妹妹。因此，丙是甲的妹妹，而不是姐姐。所以，选项D是正确的。\n\n5. **选项E：** 甲是乙的哥哥，丙是乙的妹妹。这意味着甲和乙是兄弟关系，丙是乙的妹妹。因此，丙是甲的妹妹，而不是姐姐。所以，选项E是错误的。\n\n综上所述，只有选项D符合题目中的逻辑关系。因此，最终答案是：\n\n$\\boxed{D}$",
+      "baseline_latency_ms": 7968,
+      "baseline_dose_given": false,
+      "rag_answer": "لا يوجد إجماع على أنك بحاجة لأخذ علاج للضغط في حالة ارتفاعه قليلاً [3]. يوصى بتقديم العلاج في سياق الرعاية الانتظارية الجيدة للأم [3]. إذا كان ضغطي عاليًا بشكل طفيف، فقد يكون من الأفضل متابعة الحالة مع طبيبك للتأكد من أنها تحت السيطرة [4][3].",
+      "rag_latency_ms": 1689,
+      "rag_citations": [
+        "WHO_nonsevere-hypertension-drugs_2020.pdf p.10",
+        "WHO_managing-complications_2017.pdf p.204"
+      ],
+      "rag_cited": true,
+      "rag_not_found": false,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": false,
+      "hallucination_manual": ""
+    },
+    {
+      "id": "q08",
+      "question": "Can I take NSAIDs such as ibuprofen after 20 weeks of pregnancy?",
+      "language": "en",
+      "gold": "FDA_nsaids-20-weeks_2020.pdf p.1",
+      "baseline_answer": "It is generally not recommended to take NSAIDs like ibuprofen during the second and third trimesters of pregnancy, including after 20 weeks, without consulting your healthcare provider first. NSAIDs can potentially cause complications, including reduced fetal growth and an increased risk of bleeding for the mother. \n\nHowever, if you are experiencing pain or inflammation, it's important to discuss your symptoms and any medication needs with your healthcare provider. They can provide guidance on safe pain management options that are appropriate for your specific situation and stage of pregnancy. They may recommend other pain relief methods or prescribe a safer alternative if necessary.",
+      "baseline_latency_ms": 1955,
+      "baseline_dose_given": false,
+      "rag_answer": "Ibuprofen is usually not recommended after week 20 of pregnancy. Some reports suggest that using NSAIDs in the third trimester can increase the chance of preterm delivery or low birth weight. The U.S. Food and Drug Administration (FDA) recommends not using NSAIDs after week 20 of pregnancy unless your healthcare provider specifically recommends it. If a healthcare provider decides NSAIDs are needed after week 20 of pregnancy, they should be used at the lowest dose for the shortest time. [1][3]",
+      "rag_latency_ms": 1795,
+      "rag_citations": [
+        "MTB_ibuprofen_2025.pdf p.1",
+        "FDA_nsaids-20-weeks_2020.pdf p.2"
+      ],
+      "rag_cited": true,
+      "rag_not_found": false,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": false,
+      "hallucination_manual": ""
+    },
+    {
+      "id": "q09",
+      "question": "هل البنادول (الباراسيتامول) بيعمل تشوهات للجنين؟",
+      "language": "ar",
+      "gold": "MTB_acetaminophen_2025.pdf p.1",
+      "baseline_answer": "البنادول (الباراسيتامول) هو مادة مسكنة ومضادة للالتهابات، ولكن استخدامه أثناء الحمل يجب أن يتم بحذر تحت إشراف طبي. في الأبحاث الحالية، لم يتم العثور على أدلة قوية على أن استخدام الباراسيتامول في الأشهر الأولى من الحمل يسبب تشوهات جنينية. ومع ذلك، يُنصح عادةً بعدم استخدامه إلا عند الحاجة، وتحت إشراف الطبيب، لأن هناك بعض المخاطر المرتبطة باستخدامه في الحمل، مثل زيادة خطر الولادة المبكرة أو ولادة طفل مع انخفاض وزن الجسم عند الولادة.\n\nإذا كنت حاملاً أو تعتزم الحمل، يجب استشارة الطبيب قبل استخدام أي دواء، بما في ذلك البنادول.",
+      "baseline_latency_ms": 2880,
+      "baseline_dose_given": false,
+      "rag_answer": "لم أجد إجابة لهذا السؤال في إرشادات رعاية الأمومة المتاحة لدي.",
+      "rag_latency_ms": 31,
+      "rag_citations": [],
+      "rag_cited": false,
+      "rag_not_found": true,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": false,
+      "hallucination_manual": ""
+    },
+    {
+      "id": "q16",
+      "question": "Which medicine is recommended to prevent postpartum haemorrhage?",
+      "language": "en",
+      "gold": "WHO_pph-prevention-treatment_2012.pdf p.10",
+      "baseline_answer": "To prevent postpartum hemorrhage, oxytocics are commonly recommended. One of the most widely used medications is oxytocin, which is administered intravenously or intramuscularly after delivery to help contract the uterus and reduce bleeding. Other oxytocin-like medications, such as methylergonovine, can also be used, but they are less commonly used due to potential side effects.\n\nIt's important to note that the specific medication and its administration should be determined by a healthcare provider based on the individual patient's condition and medical history. Proper management of postpartum hemorrhage also includes close monitoring and other interventions as necessary.",
+      "baseline_latency_ms": 2095,
+      "baseline_dose_given": false,
+      "rag_answer": "Dosing information has been removed: the dose, timing and any change of a medicine must be decided by your treating obstetrician. [3][4]",
+      "rag_latency_ms": 734,
+      "rag_citations": [
+        "WHO_intrapartum-care_2018.pdf p.168",
+        "WHO_labour-care-guide_2020.pdf p.38"
+      ],
+      "rag_cited": true,
+      "rag_not_found": false,
+      "rag_dose_given": false,
+      "rag_dosage_filtered": true,
+      "hallucination_manual": ""
+    }
+  ]
+}

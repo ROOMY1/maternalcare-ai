@@ -1,0 +1,14 @@
+{
+  "positives": 42,
+  "negatives": 33,
+  "tp": 42,
+  "fn": 0,
+  "fp": 0,
+  "tn": 33,
+  "precision": 1.0,
+  "recall_catch_rate": 1.0,
+  "false_block_rate": 0.0,
+  "missed": [],
+  "false_blocks": [],
+  "note": "Synthetic labelled sentences (EN + AR, incl. Arabic-Indic digits); not clinical data."
+}

@@ -1,0 +1,279 @@
+{
+  "created": "20261110_185205",
+  "hardware": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "gpu": "NVIDIA GeForce RTX 2080 Super, 8192 MiB",
+    "llm": "qwen2.5:7b-instruct",
+    "judge": "qwen2.5:7b-instruct",
+    "embedding": "BAAI/bge-m3",
+    "top_k": "4",
+    "threshold": "0.56"
+  },
+  "k": 4,
+  "metrics": {
+    "all": {
+      "n": 22,
+      "hit@1": 0.273,
+      "hit@4": 0.591,
+      "mrr": 0.383,
+      "doc_hit@4": 0.727
+    },
+    "en": {
+      "n": 13,
+      "hit@1": 0.385,
+      "hit@4": 0.615,
+      "mrr": 0.449,
+      "doc_hit@4": 0.846
+    },
+    "ar": {
+      "n": 9,
+      "hit@1": 0.111,
+      "hit@4": 0.556,
+      "mrr": 0.287,
+      "doc_hit@4": 0.556
+    },
+    "rows": [
+      {
+        "id": "q01",
+        "language": "en",
+        "rank": null,
+        "doc_rank": 1,
+        "top1": "WHO_antenatal-care_2016.pdf p.3",
+        "top1_similarity": 0.7897
+      },
+      {
+        "id": "q02",
+        "language": "ar",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_essential-practice-pcpnc_2015.pdf p.60",
+        "top1_similarity": 0.5746
+      },
+      {
+        "id": "q03",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "WHO_preeclampsia-eclampsia_2011.pdf p.10",
+        "top1_similarity": 0.7211
+      },
+      {
+        "id": "q04",
+        "language": "ar",
+        "rank": 3,
+        "doc_rank": 1,
+        "top1": "WHO_nonsevere-hypertension-drugs_2020.pdf p.44",
+        "top1_similarity": 0.695
+      },
+      {
+        "id": "q05",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "WHO_calcium-preeclampsia_2018.pdf p.8",
+        "top1_similarity": 0.7624
+      },
+      {
+        "id": "q06",
+        "language": "en",
+        "rank": 4,
+        "doc_rank": 2,
+        "top1": "WHO_antenatal-care_2016.pdf p.66",
+        "top1_similarity": 0.7097
+      },
+      {
+        "id": "q07",
+        "language": "ar",
+        "rank": 4,
+        "doc_rank": 3,
+        "top1": "WHO_antenatal-care-summary-ar_2016.pdf p.3",
+        "top1_similarity": 0.6368
+      },
+      {
+        "id": "q08",
+        "language": "en",
+        "rank": 4,
+        "doc_rank": 3,
+        "top1": "MTB_ibuprofen_2025.pdf p.1",
+        "top1_similarity": 0.734
+      },
+      {
+        "id": "q09",
+        "language": "ar",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_intrapartum-care_2018.pdf p.107",
+        "top1_similarity": 0.5295
+      },
+      {
+        "id": "q10",
+        "language": "en",
+        "rank": null,
+        "doc_rank": 4,
+        "top1": "WHO_essential-practice-pcpnc_2015.pdf p.143",
+        "top1_similarity": 0.731
+      },
+      {
+        "id": "q11",
+        "language": "ar",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_managing-complications_2017.pdf p.40",
+        "top1_similarity": 0.4546
+      },
+      {
+        "id": "q12",
+        "language": "en",
+        "rank": 3,
+        "doc_rank": 1,
+        "top1": "WHO_postnatal-care_2022.pdf p.169",
+        "top1_similarity": 0.7989
+      },
+      {
+        "id": "q13",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "FDA_food-safety-pregnancy_2022.pdf p.5",
+        "top1_similarity": 0.6408
+      },
+      {
+        "id": "q14",
+        "language": "ar",
+        "rank": 2,
+        "doc_rank": 1,
+        "top1": "FDA_advice-eating-fish_2021.pdf p.2",
+        "top1_similarity": 0.6154
+      },
+      {
+        "id": "q15",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "NICE_fetal-monitoring-labour_2022.pdf p.7",
+        "top1_similarity": 0.7102
+      },
+      {
+        "id": "q16",
+        "language": "en",
+        "rank": null,
+        "doc_rank": 1,
+        "top1": "WHO_pph-prevention-treatment_2012.pdf p.1",
+        "top1_similarity": 0.7798
+      },
+      {
+        "id": "q17",
+        "language": "ar",
+        "rank": 2,
+        "doc_rank": 2,
+        "top1": "WHO_managing-complications_2017.pdf p.173",
+        "top1_similarity": 0.6875
+      },
+      {
+        "id": "q18",
+        "language": "ar",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "WHO_antenatal-care-summary-ar_2016.pdf p.2",
+        "top1_similarity": 0.7193
+      },
+      {
+        "id": "q19",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "WHO_managing-complications_2017.pdf p.199",
+        "top1_similarity": 0.7155
+      },
+      {
+        "id": "q23",
+        "language": "en",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_postnatal-care_2022.pdf p.41",
+        "top1_similarity": 0.6722
+      },
+      {
+        "id": "q24",
+        "language": "ar",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_antenatal-care_2016.pdf p.56",
+        "top1_similarity": 0.6333
+      },
+      {
+        "id": "q25",
+        "language": "en",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_diabetes-pregnancy-care_2025.pdf p.43",
+        "top1_similarity": 0.7209
+      }
+    ]
+  },
+  "calibration": {
+    "in_scope_top1": [
+      0.455,
+      0.529,
+      0.575,
+      0.615,
+      0.633,
+      0.637,
+      0.641,
+      0.672,
+      0.688,
+      0.695,
+      0.71,
+      0.71,
+      0.716,
+      0.719,
+      0.721,
+      0.721,
+      0.731,
+      0.734,
+      0.762,
+      0.78,
+      0.79,
+      0.799
+    ],
+    "out_of_scope_top1": [
+      0.384,
+      0.387,
+      0.402,
+      0.404,
+      0.405,
+      0.415,
+      0.421,
+      0.424,
+      0.427,
+      0.444,
+      0.466,
+      0.469,
+      0.48,
+      0.48,
+      0.482,
+      0.498,
+      0.528,
+      0.533
+    ],
+    "in_scope_min": 0.455,
+    "out_of_scope_max": 0.533,
+    "best_balanced_accuracy": 0.955,
+    "best_range": [
+      0.54,
+      0.57
+    ],
+    "chosen_threshold": 0.56,
+    "in_scope_kept": 20,
+    "in_scope_total": 22,
+    "out_of_scope_blocked": 18,
+    "out_of_scope_total": 18
+  },
+  "query_mode": {
+    "translate": false,
+    "normalize": true
+  },
+  "english_queries": {}
+}

@@ -1,0 +1,295 @@
+{
+  "created": "20261110_190157",
+  "hardware": {
+    "python": "3.11.9",
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "gpu": "NVIDIA GeForce RTX 2080 Super, 8192 MiB",
+    "llm": "qwen2.5:7b-instruct",
+    "judge": "qwen2.5:7b-instruct",
+    "embedding": "BAAI/bge-m3",
+    "top_k": "4",
+    "threshold": "0.56"
+  },
+  "k": 4,
+  "metrics": {
+    "all": {
+      "n": 22,
+      "hit@1": 0.318,
+      "hit@4": 0.545,
+      "mrr": 0.402,
+      "doc_hit@4": 0.818
+    },
+    "en": {
+      "n": 13,
+      "hit@1": 0.385,
+      "hit@4": 0.615,
+      "mrr": 0.449,
+      "doc_hit@4": 0.846
+    },
+    "ar": {
+      "n": 9,
+      "hit@1": 0.222,
+      "hit@4": 0.444,
+      "mrr": 0.333,
+      "doc_hit@4": 0.778
+    },
+    "rows": [
+      {
+        "id": "q01",
+        "language": "en",
+        "rank": null,
+        "doc_rank": 1,
+        "top1": "WHO_antenatal-care_2016.pdf p.3",
+        "top1_similarity": 0.7897
+      },
+      {
+        "id": "q02",
+        "language": "ar",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_essential-practice-pcpnc_2015.pdf p.60",
+        "top1_similarity": 0.6495
+      },
+      {
+        "id": "q03",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "WHO_preeclampsia-eclampsia_2011.pdf p.10",
+        "top1_similarity": 0.7211
+      },
+      {
+        "id": "q04",
+        "language": "ar",
+        "rank": null,
+        "doc_rank": 2,
+        "top1": "WHO_managing-complications_2017.pdf p.211",
+        "top1_similarity": 0.7309
+      },
+      {
+        "id": "q05",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "WHO_calcium-preeclampsia_2018.pdf p.8",
+        "top1_similarity": 0.7624
+      },
+      {
+        "id": "q06",
+        "language": "en",
+        "rank": 4,
+        "doc_rank": 2,
+        "top1": "WHO_antenatal-care_2016.pdf p.66",
+        "top1_similarity": 0.7097
+      },
+      {
+        "id": "q07",
+        "language": "ar",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "NICE_diabetes-pregnancy_2015.pdf p.13",
+        "top1_similarity": 0.6777
+      },
+      {
+        "id": "q08",
+        "language": "en",
+        "rank": 4,
+        "doc_rank": 3,
+        "top1": "MTB_ibuprofen_2025.pdf p.1",
+        "top1_similarity": 0.734
+      },
+      {
+        "id": "q09",
+        "language": "ar",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_diabetes-pregnancy-care_2025.pdf p.1",
+        "top1_similarity": 0.6353
+      },
+      {
+        "id": "q10",
+        "language": "en",
+        "rank": null,
+        "doc_rank": 4,
+        "top1": "WHO_essential-practice-pcpnc_2015.pdf p.143",
+        "top1_similarity": 0.731
+      },
+      {
+        "id": "q11",
+        "language": "ar",
+        "rank": null,
+        "doc_rank": 3,
+        "top1": "WHO_postnatal-care_2022.pdf p.15",
+        "top1_similarity": 0.7017
+      },
+      {
+        "id": "q12",
+        "language": "en",
+        "rank": 3,
+        "doc_rank": 1,
+        "top1": "WHO_postnatal-care_2022.pdf p.169",
+        "top1_similarity": 0.7989
+      },
+      {
+        "id": "q13",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "FDA_food-safety-pregnancy_2022.pdf p.5",
+        "top1_similarity": 0.6408
+      },
+      {
+        "id": "q14",
+        "language": "ar",
+        "rank": 2,
+        "doc_rank": 1,
+        "top1": "FDA_advice-eating-fish_2021.pdf p.2",
+        "top1_similarity": 0.6154
+      },
+      {
+        "id": "q15",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "NICE_fetal-monitoring-labour_2022.pdf p.7",
+        "top1_similarity": 0.7102
+      },
+      {
+        "id": "q16",
+        "language": "en",
+        "rank": null,
+        "doc_rank": 1,
+        "top1": "WHO_pph-prevention-treatment_2012.pdf p.1",
+        "top1_similarity": 0.7798
+      },
+      {
+        "id": "q17",
+        "language": "ar",
+        "rank": 2,
+        "doc_rank": 2,
+        "top1": "WHO_managing-complications_2017.pdf p.173",
+        "top1_similarity": 0.6895
+      },
+      {
+        "id": "q18",
+        "language": "ar",
+        "rank": null,
+        "doc_rank": 1,
+        "top1": "WHO_iron-folic-acid_2012.pdf p.1",
+        "top1_similarity": 0.823
+      },
+      {
+        "id": "q19",
+        "language": "en",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "WHO_managing-complications_2017.pdf p.199",
+        "top1_similarity": 0.7155
+      },
+      {
+        "id": "q23",
+        "language": "en",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_postnatal-care_2022.pdf p.41",
+        "top1_similarity": 0.6722
+      },
+      {
+        "id": "q24",
+        "language": "ar",
+        "rank": 1,
+        "doc_rank": 1,
+        "top1": "MTB_ibuprofen_2025.pdf p.1",
+        "top1_similarity": 0.7071
+      },
+      {
+        "id": "q25",
+        "language": "en",
+        "rank": null,
+        "doc_rank": null,
+        "top1": "WHO_diabetes-pregnancy-care_2025.pdf p.43",
+        "top1_similarity": 0.7209
+      }
+    ]
+  },
+  "calibration": {
+    "in_scope_top1": [
+      0.615,
+      0.635,
+      0.641,
+      0.649,
+      0.672,
+      0.678,
+      0.69,
+      0.702,
+      0.707,
+      0.71,
+      0.71,
+      0.716,
+      0.721,
+      0.721,
+      0.731,
+      0.731,
+      0.734,
+      0.762,
+      0.78,
+      0.79,
+      0.799,
+      0.823
+    ],
+    "out_of_scope_top1": [
+      0.391,
+      0.4,
+      0.404,
+      0.407,
+      0.415,
+      0.421,
+      0.424,
+      0.428,
+      0.429,
+      0.466,
+      0.472,
+      0.48,
+      0.48,
+      0.482,
+      0.482,
+      0.498,
+      0.528,
+      0.533
+    ],
+    "in_scope_min": 0.615,
+    "out_of_scope_max": 0.533,
+    "best_balanced_accuracy": 1.0,
+    "best_range": [
+      0.54,
+      0.61
+    ],
+    "chosen_threshold": 0.57,
+    "in_scope_kept": 22,
+    "in_scope_total": 22,
+    "out_of_scope_blocked": 18,
+    "out_of_scope_total": 18
+  },
+  "query_mode": {
+    "translate": true,
+    "normalize": true
+  },
+  "english_queries": {
+    "المفروض أروح متابعة حمل كام مرة على الأقل؟": "how many times should i follow up during pregnancy",
+    "لو ضغطي عالي شوية بس مش جامد وأنا حامل، لازم آخد علاج للضغط؟": "high blood pressure during pregnancy need treatment",
+    "إمتى المفروض أعمل تحليل سكر الحمل لو عندي عوامل خطورة؟": "when to do pregnancy glucose test with risk factors",
+    "هل البنادول (الباراسيتامول) بيعمل تشوهات للجنين؟": "paracetamol pregnancy guidelines",
+    "إمتى أبدأ أرضّع البيبي بعد الولادة؟": "when to start breastfeeding after birth",
+    "إيه أنواع السمك اللي لازم أتجنبها وأنا حامل؟": "types of fish to avoid during pregnancy",
+    "يعني إيه نزيف ما بعد الولادة؟ وهو خطير؟": "postpartum hemorrhage - is it dangerous",
+    "هل الحامل محتاجة تاخد حديد وحمض فوليك؟": "iron and folic acid for pregnant women",
+    "كام حباية بروفين ينفع آخدها في اليوم وأنا حامل؟": "how many ibuprofen can i take daily while pregnant",
+    "مين كسب كاس العالم ٢٠٢٢؟": "who won the 2022 world cup",
+    "إزاي أغير كاوتش العربية؟": "how to change caouch from arabic",
+    "إيه أحسن موبايل أشتريه؟": "best mobile phone to buy",
+    "إزاي أعمل كيكة شوكولاتة؟": "how to make chocolate cake",
+    "سعر الدولار النهارده كام؟": "current dollar price today",
+    "إزاي أذاكر برمجة بايثون؟": "how to study python programming"
+  }
+}
